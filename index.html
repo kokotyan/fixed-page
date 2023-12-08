@@ -11,30 +11,20 @@
 <body>
     <header class="ex1">
         <h1>中の人ここちゃんについて</h1>
-        <div id="drawer_toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <div class="openbtn"><span></span><span></span><span></span></div>
         <nav id="global_nav">
             <ul>
-                <li>
-                    <a href="#overview">overview</a>
-                </li>
-                <li>
-                    <a href="#like">like</a>
-                </li>
-                <li>
-                    <a href="#news">news</a>
-                </li>
+                <li><a href="#overview">overview</a></li>
+                <li><a href="#like">like</a></li>
+                <li><a href="#news">news</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="content">
         <div id="overview">
-            <img src="/img/myroom.jpeg" alt="机周り" style="object-fit: cover; width: 950px; height: 400px;">
-            <h2>Overview</h2>
+            <img class="ex2" src="/img/myroom.jpeg" alt="机周り" style="object-fit: cover; width: 950px; height: 400px ">
+            <h2>overview ~簡単な紹介~</h2>
             <figure>
                 <img src="/img/zidori.jpg" alt="自撮りです">
                 <figcaption>2001/02/07 石川県珠洲市で産声を上げた</figcaption>
@@ -55,11 +45,20 @@
             </div>
         </div>
 
-        <div class="news">
-            <h2>News ~不定期に更新する~</h2>
+        <div id="news">
+            <h2>news ~不定期に更新する~</h2>
+            <dl>
+                <dt>2023/12/09</dt>
+                <dd>この固定ページを作成する</dd>
+            </dl>
+            <dl>
+                <dt>2023/12/08</dt>
+                <dd>サイトのssl証明書を取得しX(旧Twitter)に広告した</dd>
+            </dl>
         </div>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="/script.js"></script>
 </body>
 
