@@ -1,0 +1,112 @@
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino kaku Gothic ProN";
+    padding-top: 100px;
+}
+
+.ex1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.ex1 h1 {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    font-size: 20px;
+}
+
+
+#drawer_toggle {
+    display: none; /* デフォルトで非表示 */
+    cursor: pointer;
+}
+
+#global_nav {
+    display: none; /* デフォルトで非表示 */
+}
+
+@media (max-width: 768px) {
+    #drawer_toggle {
+        display: block; /* 小さい画面では表示 */
+    }
+
+    #global_nav {
+        display: block; /* 小さい画面では表示 */
+    }
+}
+
+#overview h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+#overview img,
+#like img,
+#overview p,
+#like p {
+    text-align: center;
+}
+
+
+
+figure,
+footer,
+header,
+nav {
+    display: block;
+}
+
+figure {
+    margin-bottom: 1rem;
+}
+
+figure img {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    color: #888;
+    text-align: center;
+    line-height: 4rem;
+}
+
+#like h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.slide-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+    display: flex;
+    width: 100%;
+    animation: slide-flow 20s infinite linear 1s both;
+}
+
+.slide {
+    width: 33.33%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+@keyframes slide-flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
